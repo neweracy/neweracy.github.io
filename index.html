@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kwaku Quartey Ansah Ofei — Materials Scientist & AI Engineer</title>
+<meta name="description" content="Materials scientist and AI/software engineer working at the intersection of computational materials science, applied AI/ML, and sustainability. Based in Accra, Ghana." />
+<meta name="author" content="Kwaku Quartey Ansah Ofei" />
+<!-- Open Graph -->
+<meta property="og:title" content="Kwaku Quartey Ansah Ofei — Materials Scientist & AI Engineer" />
+<meta property="og:description" content="Applying AI to materials discovery, and building AI systems for underserved contexts." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kwakuquarteyansah.com" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232e6e4e'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav" id="top">
+  <a href="#top" class="nav__brand">KQAO</a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle colour theme">◐</button>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <p class="hero__eyebrow">Accra, Ghana · GMT</p>
+    <h1 class="hero__name">Kwaku Quartey Ansah&nbsp;Ofei</h1>
+    <p class="hero__tagline">
+      Materials scientist and AI/software engineer working at the intersection of
+      <strong>computational materials science</strong>, <strong>applied AI&nbsp;/&nbsp;ML</strong>,
+      and <strong>sustainability</strong>.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#work">View my work</a>
+      <a class="btn btn--ghost" href="mailto:kwakansah2@gmail.com">Get in touch</a>
+    </div>
+    <div class="hero__links">
+      <a href="https://github.com/neweracy" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/quarteyansahofei" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://kwakuquarteyansah.com" target="_blank" rel="noopener">kwakuquarteyansah.com</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="section__title">About</h2>
+    <div class="about">
+      <p>
+        I build AI systems for people the mainstream tooling tends to leave out: offline-first
+        apps for farmers on low-end phones, speech recognition for Ghanaian languages, and
+        machine-learning surrogates that replace hours of physics simulation with millisecond
+        inference.
+      </p>
+      <p>
+        My background spans a materials science degree with density functional theory (DFT)
+        research and more than three years shipping production software across startups. I care
+        most about work where the deployment context is the hard part: intermittent connectivity,
+        constrained budgets, and languages and users that large models were never tuned for.
+      </p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <h2 class="section__title">Selected Work</h2>
+    <div class="cards">
+
+      <article class="card">
+        <div class="card__tag">Agriculture · AI</div>
+        <h3 class="card__title">MaizeYield Hub</h3>
+        <p class="card__org">Big Data Ghana</p>
+        <p class="card__body">
+          Lead developer of an offline-first React Native app and ML pipeline (scikit-learn,
+          Google Earth Engine satellite data) delivering yield forecasts to smallholder maize
+          farmers across West Africa. Asynchronous AWS backend (Lambda, SQS, Fargate, DynamoDB).
+        </p>
+        <ul class="card__stack">
+          <li>React Native</li><li>Python</li><li>scikit-learn</li><li>Google Earth Engine</li><li>AWS</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__tag">NLP · Localization</div>
+        <h3 class="card__title">Ghana Parliament Hansard System</h3>
+        <p class="card__org">Transcription &amp; RAG research platform</p>
+        <p class="card__body">
+          A three-tier platform for parliamentary transcription and AI-powered research, with a
+          hybrid Deepgram + Khaya speech-recognition pipeline for Ghanaian languages, an entity
+          correction engine, and role-based access control.
+        </p>
+        <ul class="card__stack">
+          <li>FastAPI</li><li>LangChain</li><li>pgvector</li><li>AWS Bedrock</li><li>Deepgram</li>
+        </ul>
+        <a class="card__link" href="https://github.com/neweracy/parliament-backend" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="card">
+        <div class="card__tag">Materials Informatics</div>
+        <h3 class="card__title">CASTEP-ML-PIPELINE</h3>
+        <p class="card__org">DFT-to-ML surrogate</p>
+        <p class="card__body">
+          Parses density functional theory calculations and predicts titanium-aluminide alloy
+          formation energies with an uncertainty-aware Gaussian Process surrogate, replacing
+          costly simulation with fast inference.
+        </p>
+        <ul class="card__stack">
+          <li>Python</li><li>scikit-learn</li><li>Gaussian Process</li><li>CASTEP</li>
+        </ul>
+        <a class="card__link" href="https://github.com/neweracy/CASTEP-ML-PIPELINE" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="card">
+        <div class="card__tag">Materials Informatics</div>
+        <h3 class="card__title">Band-Gap Prediction Model</h3>
+        <p class="card__org">Composition-based ML</p>
+        <p class="card__body">
+          Predicts electronic band gaps of inorganic materials from composition alone, trained on
+          15,537 Materials Project compounds using Magpie descriptors with XGBoost and Random
+          Forest.
+        </p>
+        <ul class="card__stack">
+          <li>XGBoost</li><li>Random Forest</li><li>matminer</li><li>pymatgen</li>
+        </ul>
+        <a class="card__link" href="https://github.com/neweracy/Prediction-model" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="card">
+        <div class="card__tag">Open Source</div>
+        <h3 class="card__title">IgniteParseAuthKit</h3>
+        <p class="card__org">React Native starter kit</p>
+        <p class="card__body">
+          An open-source React Native and Parse Server authentication starter kit with
+          email/password, Google OAuth, and session persistence, built to cut new-project setup
+          time.
+        </p>
+        <ul class="card__stack">
+          <li>React Native</li><li>Expo</li><li>TypeScript</li><li>Parse Server</li>
+        </ul>
+        <a class="card__link" href="https://github.com/neweracy/IgniteParseAuthKit" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="card">
+        <div class="card__tag">Enterprise · Voice AI</div>
+        <h3 class="card__title">BigConnect AI</h3>
+        <p class="card__org">Big Data Ghana</p>
+        <p class="card__body">
+          A generative-AI calling assistant that handles inbound and outbound calls with natural,
+          human-like conversation, understands caller intent, connects to business systems, and
+          escalates to a human team when needed. Core engineer on agentic workflows, multi-step
+          LLM routing, and real-time backend API integrations.
+        </p>
+        <ul class="card__stack">
+          <li>Voice AI</li><li>LLM routing</li><li>AI agents</li><li>REST APIs</li><li>AWS</li>
+        </ul>
+        <a class="card__link" href="https://bigconnectai.com" target="_blank" rel="noopener">Visit bigconnectai.com →</a>
+      </article>
+
+      <article class="card">
+        <div class="card__tag">E-commerce</div>
+        <h3 class="card__title">Sellub Marketplace</h3>
+        <p class="card__org">Duaba Labs</p>
+        <p class="card__body">
+          A multi-vendor e-commerce platform for Ghanaian businesses, with vendor storefronts,
+          inventory management, Paystack checkout, and nationwide delivery. Built with Next.js and
+          deployed via CI/CD on Vercel.
+        </p>
+        <ul class="card__stack">
+          <li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Paystack</li><li>Vercel</li>
+        </ul>
+        <a class="card__link" href="https://sellub.com" target="_blank" rel="noopener">Visit sellub.com →</a>
+      </article>
+
+      <article class="card">
+        <div class="card__tag">Automation · AI Agents</div>
+        <h3 class="card__title">WhatsApp PayFlow</h3>
+        <p class="card__org">SasekLabs</p>
+        <p class="card__body">
+          An AI-powered commerce system with autonomous agents handling product browsing, Paystack
+          payment processing, and Google Calendar booking, built on n8n and AWS Bedrock.
+        </p>
+        <ul class="card__stack">
+          <li>n8n</li><li>AWS Bedrock</li><li>Paystack</li><li>WhatsApp API</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <h2 class="section__title">What I Work With</h2>
+    <div class="skills">
+      <div class="skills__group">
+        <h3>AI &amp; Machine Learning</h3>
+        <p>LangChain, RAG pipelines (pgvector hybrid retrieval), AWS Bedrock, scikit-learn,
+           PyTorch, XGBoost, Gaussian Process surrogates, DFT-to-ML modeling.</p>
+      </div>
+      <div class="skills__group">
+        <h3>Full-Stack &amp; Mobile</h3>
+        <p>TypeScript, React, React Native &amp; Expo, Next.js, Vue, Node, Express, FastAPI,
+           Parse Server, REST and GraphQL.</p>
+      </div>
+      <div class="skills__group">
+        <h3>Cloud &amp; Data</h3>
+        <p>AWS (Lambda, SQS, Fargate, DynamoDB, Cognito, Bedrock), Vercel, PostgreSQL,
+           MongoDB, Redis, Docker, GitHub Actions.</p>
+      </div>
+      <div class="skills__group">
+        <h3>Scientific Computing</h3>
+        <p>Python (pymatgen, ASE, matminer, NumPy, SciPy, Pandas), density functional theory,
+           diffusion kinetics, materials characterization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <h2 class="section__title">Education</h2>
+    <div class="edu">
+      <div class="edu__head">
+        <h3>BSc Materials Science and Engineering</h3>
+        <span class="edu__date">2021 – 2025</span>
+      </div>
+      <p class="edu__org">University of Ghana, Legon · Second Class Honours (Upper Division)</p>
+      <p class="edu__body">
+        Undergraduate thesis on computational modeling and kinetics of halloysite nanotube drug
+        encapsulation using DFT and diffusion kinetics.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <h2 class="section__title">Let's talk</h2>
+    <p class="contact__lead">
+      Open to remote engineering roles, AI/ML contracts, and research collaboration.
+    </p>
+    <div class="contact__links">
+      <a class="btn btn--primary" href="mailto:kwakansah2@gmail.com">kwakansah2@gmail.com</a>
+      <a class="btn btn--ghost" href="https://github.com/neweracy" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn--ghost" href="https://linkedin.com/in/quarteyansahofei" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Kwaku Quartey Ansah Ofei · Accra, Ghana</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
